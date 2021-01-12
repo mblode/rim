@@ -56,10 +56,14 @@ impl Row {
         let mut length = 0;
 
         for (index, grapheme) in self.string[..].graphemes(true).enumerate() {
-            if index != at {
+            length += 1;
+
+            if index == at {
                 length += 1;
-                result.push_str(grapheme);
+                result.push(c);
             }
+
+            result.push_str(grapheme);
         }
 
         self.len = length;
@@ -70,12 +74,20 @@ impl Row {
     pub fn delete(&mut self, at: usize) {
         if at >= self.len() {
             return;
-        } else {
-            let mut result: String = self.string[..].graphemes(true).take(at).collect();
-            let remainder: String = self.string[..].graphemes(true).skip(at + 1).collect();
-            result.push_str(&remainder);
-            self.string = result;
         }
+
+        let mut result: String = String::new();
+        let mut length = 0;
+
+        for (index, grapheme) in self.string[..].graphemes(true).enumerate() {
+            if index != at {
+                length += 1;
+                result.push_str(grapheme);
+            }
+        }
+
+        self.len = length;
+        self.string = result;
     }
 
     pub fn append(&mut self, new: &Self) {
@@ -88,6 +100,7 @@ impl Row {
         let mut length = 0;
         let mut splitted_row: String = String::new();
         let mut splitted_length = 0;
+
         for (index, grapheme) in self.string[..].graphemes(true).enumerate() {
             if index < at {
                 length += 1;

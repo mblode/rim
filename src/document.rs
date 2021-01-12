@@ -62,7 +62,7 @@ impl Document {
 
         self.dirty = true;
 
-        if c == 'n' {
+        if c == '\n' {
             self.insert_newline(at);
             return;
         }
@@ -81,6 +81,7 @@ impl Document {
     #[allow(clippy::integer_arithmetic, clippy::indexing_slicing)]
     pub fn delete(&mut self, at: &Position) {
         let len = self.rows.len();
+
         if at.y >= len {
             return;
         }
