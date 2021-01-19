@@ -1,10 +1,15 @@
 [package]
-name = "hecto"
+name = "rim"
 version = "0.1.0"
 authors = ["Matthew Blode <m@blode.co>"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "RIM is a minimal text editor written in Rust"
+documentation = "https://docs.rs/rim"
+readme = "README.md"
+repository = "https://github.com/mblode/rim/"
+license = "MIT"
+keywords = ["text-editor", "text", "kilo", "hecto"]
+categories = ["command-line-utilities", "text-editor"]
 
 [dependencies]
 termion = "1"
