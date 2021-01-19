@@ -1,4 +1,4 @@
-<h1 align="center">Rim</h1>
+<h1 align="center">RIM</h1>
 <div align="center">
  <strong>
    Minimal text editor written in Rust
@@ -41,7 +41,7 @@
   </h3>
 </div>
 
-This is a text editor built in Rust. It’s a re-implementation of [kilo](http://antirez.com/news/108) in Rust, as outlined in this [fantastic tutorial](https://viewsourcecode.org/snaptoken/kilo/index.html). Same as the original booklet, these blog posts guide you through all the steps to build a basic text editor, Rim.
+RIM is a text editor built in Rust. It’s a re-implementation of [kilo](http://antirez.com/news/108) in Rust, as outlined in this [fantastic tutorial](https://viewsourcecode.org/snaptoken/kilo/index.html). Same as the original booklet, these blog posts guide you through all the steps to build a basic text editor, Rim.
 
 ## Inspiration
 
