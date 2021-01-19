@@ -1,7 +1,7 @@
 <h1 align="center">Rim</h1>
 <div align="center">
  <strong>
-   Text editor in Rust
+   Minimal text editor written in Rust
  </strong>
 </div>
 
