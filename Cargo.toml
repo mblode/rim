@@ -9,7 +9,7 @@ readme = "README.md"
 repository = "https://github.com/mblode/rim/"
 license = "MIT"
 keywords = ["text-editor", "text", "kilo", "hecto"]
-categories = ["command-line-utilities", "text-editor"]
+categories = ["command-line-utilities", "text-editors"]
 
 [dependencies]
 termion = "1"
